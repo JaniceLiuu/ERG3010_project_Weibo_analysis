@@ -1,0 +1,5 @@
+Flask
+pymysql
+numpy
+sklearn
+pandas
