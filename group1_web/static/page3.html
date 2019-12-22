@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- <html dir="ltr" lang="en"> -->
+<html dir="static" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png"> -->
+    <title>Trailblazer</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="libs/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/jquery-minicolors/jquery.minicolors.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/quill/dist/quill.snow.css">
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+                <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                    <div class="navbar-header" data-logobg="skin5">
+                        <!-- This is for the sidebar toggle which is visible on mobile only -->
+                        <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+                        <!-- ============================================================== -->
+                        <!-- Logo -->
+                        <!-- ============================================================== -->
+                        <a class="navbar-brand" href="index.html">
+                            <!-- Logo icon -->
+                            <b class="logo-icon p-l-10">
+                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                <!-- Dark Logo icon -->
+                                <img src="images/logo-text-me.png" width = "150" height = "50" alt="homepage" class="light-logo" />
+                            </b>
+                        </a>
+                        <!-- ============================================================== -->
+                        <!-- End Logo -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Toggle which is visible on mobile only -->
+                        <!-- ============================================================== -->
+                        <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+                        <!-- ============================================================== -->
+                        <!-- toggle and nav items -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav float-left mr-auto">
+                            <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
+                        </ul>
+                        <h2 align="Left"> Produce x Weibo</h2>
+                    </div>
+                </nav>
+            </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="p-t-30">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Weibo Text Recommendation</span></a></li>
+                        <li class="sidebar-item"><a href="page3.html" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Wei prediction </span></a></li>
+                        <li class="sidebar-item"><a href="page4.html" class="sidebar-link"><i class="mdi mdi-multiplication-box"></i><span class="hide-menu"> Personal Report </span></a></li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h3 class="page-title"> prediction </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <form class="form-horizontal">
+                                <div class="card-body">
+                                    <h4 class="card-title">Weibo generator</h4>
+                                    
+                                    <div class="form-group row">
+                                            <label class="col-md-3 m-t-15"> Pick your star ! </label>
+                                            <div class="col-md-9">
+                                                <!-- <script>
+                                                    function new_text(){
+                                                        text1 = document.getElementById("text1");
+                                                        text1.innerHTML = document.getElementById("get_text").value
+                                                    }
+                                                </script> -->
+                                            
+                                            <select name="s_name" id="s_name" onchange="change_s_n()" class="select2 form-control custom-select" style="width: 100%; height:36px;">
+                                                    <option>Please select here ~ </option>
+                                                    <optgroup label="Star 明星">
+                                                        <option value="刘亦菲">刘亦菲</option>
+                                                        <option value="Dear-迪丽热巴">Dear-迪丽热巴</option>
+                                                        <option value="李荣浩">李荣浩</option>
+                                                        <option value="Mr_凡先生">Mr_凡先生</option>
+                                                        <option value="热依扎">热依扎</option>
+                                                        <option value="UNIQ-王一博">UNIQ-王一博</option>
+                                                        <option value="X玖少年团肖战DAYTOY">X玖少年团肖战DAYTOY</option>
+                                                    </optgroup>
+                                                    <optgroup label="Basketball 篮球">
+                                                        <option value="JeremyLin林书豪">JeremyLin林书豪</option>
+                                                        <option value="StephenCurry">StephenCurry</option>
+                                                        <option value="KobeBryant">KobeBryant</option>
+                                                        <option value="易建联">易建联</option>
+                                                        <option value="可兰白克_13_kyranbek">可兰白克_13_kyranbek</option>
+                                                    </optgroup>
+                                                    <optgroup label="Electronic sports 电竞">
+                                                        <option value="doinb金咕咕">doinb金咕咕</option>
+                                                        <option value="iG_TheShy">iG_TheShy</option>
+                                                        <option value="ig丶JackeyLove">ig丶JackeyLove</option>
+                                                        <option value="Rookie帅哥">Rookie帅哥</option>
+                                                        <option value="TTTian9">TTTian9</option>
+                                                        <option value="FPX电子竞技俱乐部">FPX电子竞技俱乐部</option>
+                                                    </optgroup>
+                                                    <optgroup label="Writer 作家">
+                                                        <option value="郭敬明">郭敬明</option>
+                                                        <option value="韩寒">韩寒</option>
+                                                        <option value="唐家三少">唐家三少</option>
+                                                        <option value="周国平">周国平</option>
+                                                        <option value="马伯庸">马伯庸</option>
+                                                        <option value="那个狗蛋儿">那个狗蛋儿</option>
+                                                    </optgroup>
+                                                    <optgroup label="Emotion 情感">
+                                                        <option value="冷爱">冷爱</option>
+                                                        <option value="笙畅">笙畅</option>
+                                                        <option value="陈昊然">陈昊然</option>
+                                                        <option value="失恋先生的信箱">失恋先生的信箱</option>
+                                                        <option value="想见你了">想见你了</option>
+                                                        <option value="難自渡">難自渡</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                        </div>
+                                 
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-right control-label col-form-label">What's on your mind?</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" id="get_text"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top">
+                                    <div class="card-body">
+                                        <!-- button onclick -->
+                                        <button type="button" class="btn btn-primary" onclick="new_text()">Send</button>
+                                        <button type="button" class="btn btn-outline-light"><a href="page3.html">Reload</a></button>
+                                       
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                <!-- <div class="row"> -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title m-b-0">Recent Posts</h4>
+                            </div>
+                            <!-- 在这里 -->
+                            <div class="comment-widgets scrollable">
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row m-t-0">
+                                    <div class="p-2"><img src="images/favicon.png" alt="user" width="50" class="rounded-circle"></div>
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium" id="select_name1">Trailblazer</h6>
+                                        <span class="m-b-15 d-block" id="text1"> What's on your mind ? </span>
+                                        <div class="comment-footer">
+                                            <span class="text-muted float-right" id="new_date">August 14, 2009</span>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-share-square" id='share1'> 00k</div></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-comment-alt" id='comment1'> 00k</div></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-thumbs-up" id='like1'> 00k</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row">
+                                    <div class="p-2"><img src="images/favicon.png" alt="user" width="50" class="rounded-circle"></div>
+                                    <div class="comment-text active w-100">
+                                        <h6 class="font-medium" id="select_name2">Trailblazer</h6>
+                                        <span class="m-b-15 d-block" id='text2'> What do you want ? </span>
+                                        <div class="comment-footer">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-share-square" id='share2'> 00k</div></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-comment-alt" id='comment2'> 00k</div></div>
+                                                <div class="col-sm-s6 col-md-4 col-lg-3 f-icon"><div class="fas fa-thumbs-up" id='like2'> 00k</div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row">
+                                    <div class="p-2"><img src="images/favicon.png" alt="user" width="50" class="rounded-circle"></div>
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium" id="select_name3">Trailblazer</h6>
+                                        <span class="m-b-15 d-block" id='text3'>What do you want ? </span>
+                                        <div class="comment-footer">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-share-square" id='share3'> 00k</div></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-comment-alt" id='comment3'> 00k</div></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-thumbs-up" id='like3'> 00k</div></div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row comment-row">
+                                    <div class="p-2"><img src="images/favicon.png" alt="user" width="50" class="rounded-circle"></div>
+                                    <div class="comment-text w-100">
+                                        <h6 class="font-medium" id="select_name4">Trailblazer</h6>
+                                        <span class="m-b-15 d-block" id='text4'>What do you want ? </span>
+                                        <div class="comment-footer">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon" ><div class="fas fa-share-square" id='share4'> 00k</div></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon"><div class="fas fa-comment-alt" id='comment4'> 00k</div></div>
+                                                <div class="col-sm-6 col-md-4 col-lg-3 f-icon" ><div class="fas fa-thumbs-up" id='like4'> 00k</div></div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- This Page JS -->
+    <script src="libs/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    <script src="js/pages/mask/mask.init.js"></script>
+    <script src="libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="libs/select2/dist/js/select2.min.js"></script>
+    <script src="libs/jquery-asColor/dist/jquery-asColor.min.js"></script>
+    <script src="libs/jquery-asGradient/dist/jquery-asGradient.js"></script>
+    <script src="libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js"></script>
+    <script src="libs/jquery-minicolors/jquery.minicolors.min.js"></script>
+    <script src="libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="libs/quill/dist/quill.min.js"></script>
+    <script src="js/my_js/form.js"></script>
+    
+
+</body>
+
+</html>
