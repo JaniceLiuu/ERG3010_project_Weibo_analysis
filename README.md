@@ -8,5 +8,7 @@ It is already available to run:
 1. `$pip install -r requirements.txt`
 2. `$python app.py`
 
-Then you could open the web page and have a look at it.
+Then the web page should be open automaticly.
+
+However, due to the size of the file is too large, here, you could check all the importent algorithm python file, html file and javascript. If you want to have a real interaction with our website, please go into the sever offered by USTF. All the meterial is uploaded in the group_1 folder. Follow the intruction mentioned above, and you could see the complete version of our website.
 
